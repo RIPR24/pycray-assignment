@@ -1,11 +1,11 @@
-import { createEnv } from '@t3-oss/env-nextjs';
-import { z } from 'zod';
+import { createEnv } from "@t3-oss/env-nextjs";
+import { z } from "zod";
 
 export const keys = () =>
   createEnv({
     server: {
       BETTERSTACK_API_KEY: z.string().optional(),
-      BETTERSTACK_URL: z.string().url().optional(),
+      BETTERSTACK_URL: z.string().optional(),
 
       // Added by Sentry Integration, Vercel Marketplace
       SENTRY_ORG: z.string().optional(),
