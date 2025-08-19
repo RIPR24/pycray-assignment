@@ -55,8 +55,10 @@ Made with [contrib.rocks](https://contrib.rocks).
       NEXT_PUBLIC_API_URL="http://localhost:3002"
       NEXT_PUBLIC_DOCS_URL="http://localhost:3004"
 
-    3# as well as in the projects/cms and paste
+    3# as well as in the packages/cms and paste
 
       BASEHUB_TOKEN="bshb_pk_ay6h58lnawg8qs0l8klw3ey88r5yk5e31rwxf98vswv9xj35997whf8hygmku2ma"
 
     4# and then do pnpm dev to run the project
+
+    5 open http://localhost:3001/ in browser
