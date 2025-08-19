@@ -29,3 +29,34 @@ Then read the [docs](https://www.next-forge.com/docs) for more information.
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
+
+## steps to run the project
+
+    #1 pnpm install
+
+    #2 create a .env.local file in apps/web and paste
+
+      BASEHUB_TOKEN="bshb_pk_ay6h58lnawg8qs0l8klw3ey88r5yk5e31rwxf98vswv9xj35997whf8hygmku2ma"
+      VERCEL_PROJECT_PRODUCTION_URL="http://localhost:3001"
+      KNOCK_API_KEY=""
+      KNOCK_FEED_CHANNEL_ID=""
+
+      # Client
+      NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=""
+      NEXT_PUBLIC_CLERK_SIGN_IN_URL="/sign-in"
+      NEXT_PUBLIC_CLERK_SIGN_UP_URL="/sign-up"
+      NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL="/"
+      NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL="/"
+      NEXT_PUBLIC_GA_MEASUREMENT_ID="G-XXXXXXXXXX"
+      NEXT_PUBLIC_POSTHOG_KEY="phc_xxxxxxxxxxxxxxxxx"
+      NEXT_PUBLIC_POSTHOG_HOST="https://app.posthog.com"
+      NEXT_PUBLIC_APP_URL="http://localhost:3000"
+      NEXT_PUBLIC_WEB_URL="http://localhost:3001"
+      NEXT_PUBLIC_API_URL="http://localhost:3002"
+      NEXT_PUBLIC_DOCS_URL="http://localhost:3004"
+
+    3# as well as in the projects/cms and paste
+
+      BASEHUB_TOKEN="bshb_pk_ay6h58lnawg8qs0l8klw3ey88r5yk5e31rwxf98vswv9xj35997whf8hygmku2ma"
+
+    4# and then do pnpm dev to run the project
